@@ -203,7 +203,7 @@ body {
 .user-clients .logo {
     width: 128px;
     height: 128px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
@@ -214,6 +214,7 @@ body {
 }
 .user-clients span {
     color: #444;
+    display: block;
 }
 @media only screen and (min-width: 768px) {
     .images {
