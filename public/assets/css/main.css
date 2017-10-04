@@ -199,14 +199,12 @@ body {
 }
 .user-clients .client {
     text-align: center;
+    margin-bottom: 25px;
 }
 .user-clients .logo {
-    width: 128px;
-    height: 128px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 .user-clients .logo img {
     object-fit: contain;
