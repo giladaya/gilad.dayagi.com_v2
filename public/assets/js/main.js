@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("_DOMContentLoaded", function() {
     new SweetScroll({});
     particlesJS("particles-js", {
         particles: {

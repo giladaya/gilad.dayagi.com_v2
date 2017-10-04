@@ -33,7 +33,9 @@ body {
     }
 }
 #particles-js {
-    background: #1a222c;
+    background-color: rgba(26, 34, 44, 0.5);    
+    background-blend-mode: multiply;
+    background-image: url(/assets/img/placeholder-big.jpg);
     display: block;
     vertical-align: bottom;
     width: 100vw;
@@ -107,12 +109,12 @@ body {
     margin: 2px;
     border-radius: 50%;
     border: 2px solid #fff;
-    transition: all .7s
+    transition: all .3s
 }
 .icons-header .icon:active,
 .icons-header .icon:hover {
     color: #1a222c;
-    background: #fff
+    background: #fff;
 }
 @media only screen and (min-width: 768px) {
     .icons-header .icon {
