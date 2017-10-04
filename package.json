@@ -1,0 +1,27 @@
+{
+  "name": "gilad.dayagi.com",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve public",
+    "deploy": "surge"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giladaya/gilad.dayagi.com.git"
+  },
+  "author": "Gilad Dayagi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giladaya/gilad.dayagi.com/issues"
+  },
+  "homepage": "https://github.com/giladaya/gilad.dayagi.com#readme",
+  "devDependencies": {
+    "surge": "^0.19.0"
+  },
+  "dependencies": {
+    "serve": "^6.2.0"
+  }
+}
