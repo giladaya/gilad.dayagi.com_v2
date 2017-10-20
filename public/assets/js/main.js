@@ -1,11 +1,19 @@
-document.addEventListener("_DOMContentLoaded", function() {
-    new SweetScroll({});
+document.addEventListener("DOMContentLoaded", function() {
+    initSweetScroll();
+    // initParticles();
+}, false);
+
+function initSweetScroll() {
+    new SweetScroll({});   
+}
+
+function initParticles() {
     particlesJS("particles-js", {
         particles: {
             number: {
                 value: 30,
                 density: {
-                    enable: !0,
+                    enable: true,
                     value_area: 800
                 }
             },
@@ -29,41 +37,41 @@ document.addEventListener("_DOMContentLoaded", function() {
             },
             opacity: {
                 value: .5,
-                random: !1,
+                random: false,
                 anim: {
-                    enable: !1,
+                    enable: false,
                     speed: 1,
                     opacity_min: .1,
-                    sync: !1
+                    sync: false
                 }
             },
             size: {
                 value: 3,
-                random: !0,
+                random: true,
                 anim: {
-                    enable: !1,
+                    enable: false,
                     speed: 19.18081918081918,
                     size_min: .1,
-                    sync: !1
+                    sync: false
                 }
             },
             line_linked: {
-                enable: !0,
+                enable: true,
                 distance: 150,
                 color: "#ffffff",
                 opacity: .4,
                 width: 1
             },
             move: {
-                enable: !0,
+                enable: true,
                 speed: 4,
                 direction: "none",
-                random: !0,
-                straight: !1,
+                random: true,
+                straight: false,
                 out_mode: "out",
-                bounce: !1,
+                bounce: false,
                 attract: {
-                    enable: !1,
+                    enable: false,
                     rotateX: 600,
                     rotateY: 1200
                 }
@@ -74,14 +82,14 @@ document.addEventListener("_DOMContentLoaded", function() {
             detect_on: "window",
             events: {
                 onhover: {
-                    enable: !1,
+                    enable: false,
                     mode: "grab"
                 },
                 onclick: {
-                    enable: !0,
+                    enable: true,
                     mode: "push"
                 },
-                resize: !0
+                resize: true
             },
             modes: {
                 grab: {
@@ -109,6 +117,6 @@ document.addEventListener("_DOMContentLoaded", function() {
                 }
             }
         },
-        retina_detect: !0
+        retina_detect: true
     })
-}, !1);
+}
