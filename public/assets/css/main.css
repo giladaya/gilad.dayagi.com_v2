@@ -37,7 +37,6 @@ body {
     background-blend-mode: multiply;
     background-image: url(/assets/img/placeholder-big.jpg);
     display: block;
-    vertical-align: bottom;
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -206,9 +205,21 @@ body {
     justify-content: center;
     align-items: center;
 }
+.user-clients .logo {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: all 1.2s;
+}
+.user-clients .logo:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    transition: all 0.2s;
+}
 .user-clients .logo img {
     object-fit: contain;
-    max-width: 100%;
+    max-width: 80px;
+    width: 100%;
 }
 .user-clients span {
     color: #444;
@@ -241,9 +252,9 @@ body {
     color: #fff;
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
 }
-#clients {
+/* #clients {
     display: none;
-}
+} */
 .footer {
     background: #1a222c;
     padding: 10px 0;
@@ -257,8 +268,10 @@ body {
 .footer a {
     text-decoration: none;
     margin: 0;
-    color: #fff
+    color: #78abec
 }
 .footer p {
     color: #778eab;
+    margin: 0;
+    font-size: 75%;
 }
