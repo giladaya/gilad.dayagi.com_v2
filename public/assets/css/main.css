@@ -32,6 +32,10 @@ body {
         top: -10px
     }
 }
+section {
+    padding-top: 2.5rem;
+}
+
 #particles-js {
     background-color: rgba(26, 34, 44, 0.5);    
     background-blend-mode: multiply;
@@ -205,6 +209,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* filters */
 .user-clients .logo {
     filter: gray;
     -webkit-filter: grayscale(1);
